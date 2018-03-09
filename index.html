@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Happy Birthday</title>
+    <link rel="icon" href="img/1.ico" type="image/x-ico" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="bgmusic">
+	<audio loop autoplay="autoplay" id="Jaudio" src="music/hb1.mp3" width="0" height="0"></audio>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/play.js"></script>
+<script src="js/main.js"></script>
+<script>
+$(function () {
+    openTp('你好呀。',1,'Cancel','OK','哈哈，取消没用！',alert2);
+    function alert2() {
+        promptTp('啊～ 我是贼帅贼帅的严梦婷 但你是谁啊！',4,'OK',['小姐姐','小哥哥'],alert3,'再给你一次机会。');
+    }
+    function alert3() {
+        openTp('啊～ 太好了，我就是来找你的！',5,'Cancel','OK','不允许取消！','')
+    }
+
+    /**
+     * val1 弹框内容
+     * val2 弹出动画 0:平滑放大。默认;1:从上掉落;2:从最底部往上滑入;3:从左滑入;4:从左翻滚;5:渐显;6:抖动
+     * val3 第一个按钮名称(取消)
+     * val4 第二个按钮名称(确认)
+     * val5 不让取消的提示语
+     * val6 下一个执行方法;最后一步默认：''
+     * */
+    // openTp(val1,val2,val3,val4,val5,val6);
+    /**
+     * val1 弹框内容
+     * val2 弹出动画 0:平滑放大。默认;1:从上掉落;2:从最底部往上滑入;3:从左滑入;4:从左翻滚;5:渐显;6:抖动
+     * val3 按钮名称
+     * val4 判断输入框的值
+     * val5 下一个执行方法;最后一步默认：''
+     * val6 输入判断错误的提示语
+     * */
+    // promptTp(val1,val2,val3,val4,val5,val6);
+
+})
+
+</script>
+</html>
