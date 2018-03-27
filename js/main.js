@@ -19,6 +19,23 @@ function openTp(val1,val2,val3,val4,val5,val6){
     });
 }
 
+function openTp2(val1,val2,val3,val4){
+    layer.open({
+        content: val1, // 弹框内容
+        closeBtn: 0,  // 去掉右上角的关闭按钮
+        anim: val2, // 弹出动画
+        btn: val3,  // 1个显示按钮名字
+        yes: function(i,y){
+            layer.close(i);
+            if (val4 != ''){
+                val4();
+            } else {
+                endfun();
+            }
+        }
+    });
+}
+
 // 有输入框的弹框
 function promptTp(val1,val2,val3,val4,val5,val6) {
     layer.prompt({

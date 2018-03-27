@@ -42,33 +42,76 @@ var mySwiper = new Swiper ('.swiper-container', {
     effect : 'fade',
 })
 $(function () {
-    openTp('你好呀。',1,'Cancel','OK','哈哈，取消没用！',alert2);
-    function alert2() {
-        promptTp('啊～ 我是贼帅贼帅的严梦婷 但你是谁啊！',4,'OK',['小姐姐','小哥哥'],alert3,'再给你一次机会。');
+    openTp2('你好呀。',1,'你好',alert2);
+    function alert2(){
+        openTp('我知道你是放我无数次鸽子也不能打si她的人。<br/>那你知道我是谁吗？',3,'言大墨迹','严大墨迹','再给你一次机会！',alert3)
     }
-    function alert3() {
-        openTp('啊～ 太好了，我就是来找你的呀！',3,'Cancel','OK','不允许取消！','')
+    function alert3(){
+        openTp('你给我的备注真让我有打si你的冲动，谁叫我',2,'把你当大爷','把你当女儿宠呢','你大爷的！',alert4)
     }
-
-    /**
-     * val1 弹框内容
-     * val2 弹出动画 0:平滑放大。默认;1:从上掉落;2:从最底部往上滑入;3:从左滑入;4:从左翻滚;5:渐显;6:抖动
-     * val3 第一个按钮名称(取消)
-     * val4 第二个按钮名称(确认)
-     * val5 不让取消的提示语
-     * val6 下一个执行方法;最后一步默认：''
-     * */
-    // openTp(val1,val2,val3,val4,val5,val6);
-    /**
-     * val1 弹框内容
-     * val2 弹出动画 0:平滑放大。默认;1:从上掉落;2:从最底部往上滑入;3:从左滑入;4:从左翻滚;5:渐显;6:抖动
-     * val3 按钮名称
-     * val4 判断输入框的值
-     * val5 下一个执行方法;最后一步默认：''
-     * val6 输入判断错误的提示语
-     * */
-    // promptTp(val1,val2,val3,val4,val5,val6);
-
+    function alert4(){
+        openTp2('如果不是因为你不会照顾自己，我才懒得像个老妈子一样叨叨你。',4,'嗯嗯',alert5)
+    }
+    function alert5(){
+        openTp2('这只有“老妈子”一个答案你都答对了？！那你月末还是吃tu吧。别找我了。',3,'OK',alert6)
+    }
+    function alert6(){
+        openTp('谁要你一个月都才联系我两三次？我不会有点想你的吗？',1,'噢','哦','你就是这么无情冷漠,这么无理取闹', alert7)
+    }
+    function alert7(){
+        promptTp('听到背景音乐了吧。这是你发给我的第2首歌，第一首歌是',4,'OK',['二十岁的某一天'],alert8,'再给你一次机会。');
+    }
+    function alert8(){
+        openTp2('我觉得虽然你可以唱很多种风格的歌。<br/>但是我还是jio的这首歌最喜欢了。',3,'OK', alert9)
+    }
+    function alert9(){
+        openTp2('为什么？<br/>因为每次听的时候都会觉得很开心啊！！！',1,'嗯哼', alert10)
+    }
+    function alert10(){
+        openTp2('所以有时候觉得无聊的时候就会翻开收藏夹，真的会听到傻笑哦！',3,'傻乎乎', alert11)
+    }
+    function alert11(){
+        openTp2('可能我平常就是一个高冷的面瘫，但是我知道我还是最喜欢你跟王铮两个傻乎乎了。',2,'是的', alert12)
+    }
+    function alert12(){
+        openTp2('是啊！跟你们在一起的时候最开心了，跟一个小猪仔一样。',5,'傻居居', alert13)
+    }
+    function alert13(){
+        openTp2('嘿嘿，平常交流的机会太少了，趁这次表白陈园小姐姐？',6,'嘿嘿', alert14)
+    }
+    function alert14(){
+        openTp2('别傻了，像我这么矜持的人，只会把喜欢藏在眼睛里。',1,'嗯哼', alert15)
+    }
+    function alert15(){
+        openTp2('这些是为你准备的生日礼物，.......之一',4,'OK', alert16)
+    }
+    function alert16(){
+        openTp2('偷偷告诉你，我很喜欢那天你送我上表白墙的那一句话！',2,'OK', alert17)
+    }
+    function alert17(){
+        openTp2('我们要一起努力，在喜欢的道路上彼此前行。',5,'OK', alert18)
+    }
+    function alert18(){
+        openTp2('人生如茶需慢品，岁月如歌要静听。',3,'OK', alert19)
+    }
+    function alert19(){
+        openTp2('现在的我在努力，尽管道路不同，但你尽管飞翔，大陆会一直支持着你。',2,'OK', alert20)
+    }
+    function alert20(){
+        openTp2('很庆幸，在最好的时光，遇见最好的你。',6,'OK', alert21)
+    }
+    function alert21(){
+        openTp2('真的以为我很佛系不会表白吗？',2,'非常会', alert22)
+    }
+    function alert22(){
+        openTp2('当然不会对你说我很喜欢你啊陈园同学。',4,'OK', alert23)
+    }
+    function alert23(){
+        openTp2('生日快乐',0,'确认', alert24)
+    }
+    function alert24(){
+        openTp2('I blessed a day I found you.',5,'傻乎乎', '')
+    }
 })
 
 </script>
