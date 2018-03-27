@@ -48,6 +48,10 @@ function promptTp(val1,val2,val3,val4,val5,val6) {
 
 // 结束动画
 function endfun(){
+    //更换样式
+    $("#cssfile").attr("href", "css/style2.css");
+    //删除图片轮播
+    $(".swiper-container").remove();
     // 更换背景音乐
     $("#bgmusic").html("").append('<audio loop autoplay="autoplay" id="Jaudio" src="music/hb2.mp3" width="0" height="0"></audio>');
     $("body").append('<div class="velas">\n' +

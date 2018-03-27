@@ -1,0 +1,15 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container img{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+}

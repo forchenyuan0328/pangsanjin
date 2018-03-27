@@ -5,25 +5,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Happy Birthday</title>
     <link rel="icon" href="img/1.ico" type="image/x-ico" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style1.css" id="cssfile">
 </head>
 <body>
 <div id="bgmusic">
 	<audio loop autoplay="autoplay" id="Jaudio" src="music/hb1.mp3" width="0" height="0"></audio>
 </div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/001.jpg"/></div>
+        <div class="swiper-slide"><img src="img/002.jpg"/></div>
+        <div class="swiper-slide"><img src="img/003.jpg"/></div>
+        <div class="swiper-slide"><img src="img/004.jpg"/></div>
+        <div class="swiper-slide"><img src="img/005.jpg"/></div>
+        <div class="swiper-slide"><img src="img/006.jpg"/></div>
+        <div class="swiper-slide"><img src="img/007.jpg"/></div>
+        <div class="swiper-slide"><img src="img/008.jpg"/></div>
+    </div>
+</div>
 </body>
-<script src="js/jquery.min.js"></script>
-<script src="js/layer/layer.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/layer/3.0.3/layer.min.js"></script>
 <script src="js/play.js"></script>
 <script src="js/main.js"></script>
 <script>
+var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    speed:1000,
+    autoplay: {
+        delay: 8000,
+        stopOnLastSlide: true,
+        // waitForTransition: false,
+    },
+    effect : 'fade',
+})
 $(function () {
-    openTp('你好呀。',1,'Cancel','OK','哈哈，取消没用！！',alert2);
+    openTp('你好呀。',1,'Cancel','OK','哈哈，取消没用！',alert2);
     function alert2() {
         promptTp('啊～ 我是贼帅贼帅的严梦婷 但你是谁啊！',4,'OK',['小姐姐','小哥哥'],alert3,'再给你一次机会。');
     }
     function alert3() {
-        openTp('啊～ 太好了，我就是来找你的！',5,'Cancel','OK','不允许取消！','')
+        openTp('啊～ 太好了，我就是来找你的呀！',3,'Cancel','OK','不允许取消！','')
     }
 
     /**
